@@ -33,6 +33,9 @@ jobs:
       - name: Build
         run: npm run build:prod
       
+      - name: Copy index.html to 404.html
+        run: cp ./dist/alpha-tech-store/index.html ./dist/alpha-tech-store/404.html
+      
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
