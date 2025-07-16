@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fs-3 fw-bold d-flex align-items-center" routerLink="/">
+      <img src="assets/images/logo.png" alt="AlphaTech Logo" width="36" height="36" class="me-2" style="object-fit:contain;">
+      AlphaTech
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/" data-bs-toggle="collapse" data-bs-target="#navbarNav">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="devicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Devices
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="devicesDropdown">
+            <li><a class="dropdown-item" routerLink="/category/computers" data-bs-toggle="collapse" data-bs-target="#navbarNav">Computers</a></li>
+            <li><a class="dropdown-item" routerLink="/category/tvs" data-bs-toggle="collapse" data-bs-target="#navbarNav">TVs</a></li>
+            <li><a class="dropdown-item" routerLink="/category/phones" data-bs-toggle="collapse" data-bs-target="#navbarNav">Phones</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/cart" data-bs-toggle="collapse" data-bs-target="#navbarNav">Cart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/wishlist" data-bs-toggle="collapse" data-bs-target="#navbarNav">Wishlist</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/checkout" data-bs-toggle="collapse" data-bs-target="#navbarNav">Checkout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

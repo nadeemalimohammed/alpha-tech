@@ -1,0 +1,16 @@
+<div class="col mb-4">
+  <div class="card h-100 shadow-xs hover-zoom">
+    <img [src]="product.imageUrl" [alt]="product.name" class="product-image hover-zoom">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">{{ product.name }}</h5>
+      <p class="card-text fw-bold">${{ product.price }}</p>
+      <div class="mt-auto d-flex flex-wrap gap-4">
+        <a [routerLink]="['/product', product.id]" class="btn btn-outline-primary flex-grow-1">View Details</a>
+        <button (click)="addToCart(product)" class="btn btn-success flex-grow-1">Add to Cart</button>
+        <div *ngIf="showAdded" class="alert alert-success position-fixed top-0 end-0 m-4" style="z-index: 1050;">
+          Item added to cart!
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

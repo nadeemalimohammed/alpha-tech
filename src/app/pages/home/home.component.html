@@ -1,0 +1,185 @@
+<!-- Hero Banner -->
+<section class="bg-black text-white text-center p-5 mb-5 rounded-bottom-5">
+  <h1 class="display-4 mb-3">Welcome to AlphaTech</h1>
+  <p class="lead mb-4">Your One-Stop Destination for Cutting-Edge Electronics</p>
+  <a routerLink="/category/computers" class="btn btn-primary btn-lg mt-3">Shop Now</a>
+</section>
+
+<!-- Featured Products -->
+<section class="container mb-5 py-3">
+  <h2 class="text-center mb-4 pb-2">Featured Products</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm p-3">
+        <img src="assets/images/computers/macbook-pro14.jpg" class="card-img-top featured-product-img mb-3" alt="MacBook Pro 14">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-2">MacBook Pro 14"</h5>
+          <p class="card-text mb-3">$1,999</p>
+          <a [routerLink]="['/product', 2]" class="btn btn-outline-primary">View Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm p-3">
+        <img src="assets/images/tvs/samsung-qled65.jpeg" class="card-img-top featured-product-img mb-3" alt="Samsung TV">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-2">Samsung 65&quot; OLED TV</h5>
+          <p class="card-text mb-3">$1,299</p>
+          <a [routerLink]="['/product', 11]" class="btn btn-outline-primary">View Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm p-3">
+        <img src="assets/images/phones/iphone15-pro.jpeg" class="card-img-top featured-product-img mb-3" alt="iPhone 15 Pro">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-2">iPhone 15 Pro</h5>
+          <p class="card-text mb-3">$1,199</p>
+          <a [routerLink]="['/product', 21]" class="btn btn-outline-primary">View Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Shop by Category Section -->
+<section class="container mb-5 py-3">
+  <h2 class="text-center mb-4 pb-2">Shop by Category</h2>
+
+  <!-- Computers -->
+  <div class="row align-items-center mb-5 py-2">
+    <div class="col-md-6 mb-3 mb-md-0">
+      <img src="assets/images/thumbnails/computers-thumbnail.jpg" class="img-fluid rounded shadow-sm" alt="Computers">
+    </div>
+    <div class="col-md-6 text-center">
+      <h3 class="mb-3">Top Computers</h3>
+      <p class="mb-4">Explore high-performance laptops, desktops, and gaming rigs.</p>
+      <a routerLink="/category/computers" class="btn btn-outline-primary mt-2">Shop Computers</a>
+    </div>
+  </div>
+
+  <!-- TVs -->
+  <div class="row align-items-center mb-5 py-2 flex-md-row-reverse">
+    <div class="col-md-6 mb-3 mb-md-0">
+      <img src="assets/images/thumbnails/tvs-thumbnail.jpg" class="img-fluid rounded shadow-sm" alt="TVs">
+    </div>
+    <div class="col-md-6 text-center">
+      <h3 class="mb-3">Latest TVs</h3>
+      <p class="mb-4">Discover stunning 4K, OLED, and Smart TVs for your home.</p>
+      <a routerLink="/category/tvs" class="btn btn-outline-primary mt-2">Shop TVs</a>
+    </div>
+  </div>
+
+  <!-- Phones -->
+  <div class="row align-items-center mb-5 py-2">
+    <div class="col-md-6 mb-3 mb-md-0">
+      <img src="assets/images/thumbnails/smartphones-thumbnail.jpg" class="img-fluid rounded shadow-sm" alt="Phones">
+    </div>
+    <div class="col-md-6 text-center">
+      <h3 class="mb-3">Smartphones</h3>
+      <p class="mb-4">Stay connected with the latest smartphones from top brands.</p>
+      <a routerLink="/category/phones" class="btn btn-outline-primary mt-2">Shop Phones</a>
+    </div>
+  </div>
+</section>
+
+<!-- Why Shop with AlphaTech -->
+<section class="container text-center mb-5 py-3">
+  <h2 class="mb-4 pb-2">Why Shop with AlphaTech?</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="icon-box p-4 h-100 shadow-lg rounded">
+        <i class="bi bi-truck fs-1 mb-3"></i>
+        <h5 class="mb-2">Fast Shipping</h5>
+        <p>Get your products delivered quickly and efficiently.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="icon-box p-4 h-100 shadow-lg rounded">
+        <i class="bi bi-headset fs-1 mb-3"></i>
+        <h5 class="mb-2">24/7 Customer Support</h5>
+        <p>Our support team is always ready to assist you.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="icon-box p-4 h-100 shadow-lg rounded">
+        <i class="bi bi-shield-lock fs-1 mb-3"></i>
+        <h5 class="mb-2">Secure Payments</h5>
+        <p>Your payment information is safe and secure with us.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Customer Reviews -->
+<section class="container mb-5 py-3">
+  <h2 class="text-center mb-4 pb-2">What Our Customers Are Saying</h2>
+  <div class="row mt-4 g-4">
+    <div class="col-md-4 mb-3">
+      <div class="card p-4 h-100 shadow-lg border-0">
+        <p class="mb-3">"I bought my gaming laptop from AlphaTech and it exceeded my expectations! Fast delivery and unbeatable price."</p>
+        <strong>— Jessica P., Toronto</strong>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="card p-4 h-100 shadow-lg border-0">
+        <p class="mb-3">"Our new 4K Smart TV is amazing. Customer support helped me pick the perfect model. Highly recommend AlphaTech!"</p>
+        <strong>— Daniel M., Vancouver</strong>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="card p-4 h-100 shadow-lg border-0">
+        <p class="mb-3">"Purchased a smartphone during their sale — got a great deal and super fast shipping. Very happy with the service!"</p>
+        <strong>— Priya S., Calgary</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Us -->
+<section class="container text-center mb-5 py-3">
+  <h2 class="mb-5">About AlphaTech</h2>
+  <p class="lead mb-0">
+    At AlphaTech, we bring you the latest and greatest in electronics — from powerful computers to stunning TVs and the newest smartphones.
+    Enjoy unbeatable deals, fast shipping, and trusted service.
+  </p>
+</section>
+
+<!-- Brands We Carry -->
+<section class="container text-center mb-5 py-3">
+  <h2 class="mb-5 pb-2">Brands We Carry</h2>
+  <div class="row g-4 justify-content-center">
+    <div class="col-md-2 col-4">
+      <img src="assets/images/brands/brand-apple.png" class="img-fluid brand-logo" alt="Apple">
+    </div>
+    <div class="col-md-2 col-4">
+      <img src="assets/images/brands/brand-samsung.png" class="img-fluid brand-logo" alt="Samsung">
+    </div>
+    <div class="col-md-2 col-4">
+      <img src="assets/images/brands/brand-sony.png" class="img-fluid brand-logo" alt="Sony">
+    </div>
+    <div class="col-md-2 col-4">
+      <img src="assets/images/brands/brand-dell.png" class="img-fluid brand-logo" alt="Dell">
+    </div>
+    <div class="col-md-2 col-4">
+      <img src="assets/images/brands/brand-hp.png" class="img-fluid brand-logo" alt="HP">
+    </div>
+    <div class="col-md-2 col-4">
+      <img src="assets/images/brands/brand-lg.png" class="img-fluid brand-logo" alt="LG">
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter Subscription -->
+<section class="container text-center my-5 py-3">
+  <h2 class="mb-3">Subscribe to Our Newsletter</h2>
+  <p class="lead mb-4">Get updates on latest deals and new products.</p>
+  <form class="row justify-content-center">
+    <div class="col-md-6 mb-2">
+      <input type="email" class="form-control mb-2" placeholder="Enter your email">
+    </div>
+    <div class="col-md-2 mb-2">
+      <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+    </div>
+  </form>
+</section>
